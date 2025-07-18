@@ -3,10 +3,11 @@ import component from "./components";
 import { type Booking } from "./types/booking";
 import Image from "./assets/index"
 import './App.css'
+import toast from "react-hot-toast";
 
 function App() {
     const booking: Booking = {
- serviceName: "JW Marriot ",
+ serviceName: "JW Marriot",
     imageUrl: "hotel.jpg",
     provider: "TravelGo",
     price: "₹4,999",
@@ -15,6 +16,7 @@ function App() {
     location: "Goa, India",
     description: "Enjoy a luxury beachfront resort with complimentary breakfast and spa access.",
        images: [
+        Image.hotel,
       Image.hotel1,
       Image.hotel2,
       Image.hotel3,
@@ -23,7 +25,7 @@ function App() {
   };
 
   const handleBooking = () => {
-    alert("Booking confirmed!");
+    toast.success("📚 Booking Successful!")
   };
 
 
