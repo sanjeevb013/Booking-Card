@@ -44,7 +44,7 @@ const BookingCard: React.FC<Props> = ({ booking, onBookNow }) => {
   </div>
 
   <div className="p-5 space-y-4">
-    <div className="flex justify-between mb-1">
+    <div className="flex justify-between mb-2">
     <h2 className="text-xl font-bold text-primary">{booking.serviceName}</h2>
     <div className="flex items-center gap-1">
         <User2 className="w-4 h-4 text-blue-500" />
@@ -119,7 +119,7 @@ const BookingCard: React.FC<Props> = ({ booking, onBookNow }) => {
 
     <div className="w-full max-w-5xl px-6 md:px-12 flex items-center justify-center gap-4 relative">
       {/* ◀️ Prev Button (Outside image, Desktop only) */}
-    <div className="swiper-button-prev hidden md:flex text-white text-4xl cursor-pointer select-none z-40 mb-hidden">
+   <div className="swiper-button-prev hidden md:flex text-white text-4xl cursor-pointer select-none z-40 mb-hidden">
     </div>
 
       {/* 🖼️ Swiper with Images */}
@@ -145,8 +145,8 @@ const BookingCard: React.FC<Props> = ({ booking, onBookNow }) => {
       </Swiper>
 
       {/* ▶️ Next Button (Outside image, Desktop only) */}
-      <div className="swiper-button-next hidden md:flex text-white text-4xl cursor-pointer select-none z-40 mb-hidden">
-      </div>
+        <div className="swiper-button-next hidden md:flex text-white text-4xl cursor-pointer select-none z-40 mb-hidden">
+        </div>
     </div>
   </div>
 )}

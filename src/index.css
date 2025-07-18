@@ -2,7 +2,7 @@
 
 @media (max-width: 767px) {
 .mb-hidden{
-    display: none;
+    display: none !important;
 }
 }
 
